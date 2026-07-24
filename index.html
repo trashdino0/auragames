@@ -580,7 +580,7 @@ function render(games) {
 function openGame(file) {
   const name = cleanName(file);
   document.getElementById('modalTitle').textContent = name;
-  document.getElementById('gameFrame').src = 'games/' + file;
+  document.getElementById('gameFrame').src = 'offline/' + file;
   document.getElementById('modal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
